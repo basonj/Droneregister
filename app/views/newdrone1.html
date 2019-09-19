@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/account">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Tell us about your drone</h1>
+
+      <form class="form" action="/newdrone2" method="post">
+
+        <p>Please provide the make and model of your drone.</p>
+
+        <div class="govuk-warning-text">
+          <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+          <strong class="govuk-warning-text__text">
+            <span class="govuk-warning-text__assistive">Warning</span>
+            Please provide as much detail as possible. If the details provided are too vague or do not match your drone, your registration may be invalid.
+          </strong>
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="event-name">
+            Make:
+          </label>
+          <input class="govuk-input" id="event-name" name="event-name" type="text">
+        </div><div class="govuk-form-group">
+          <label class="govuk-label" for="event-name">
+            Model:
+          </label>
+          <input class="govuk-input" id="event-name" name="event-name" type="text">
+        </div>
+
+        <div class="govuk-form-group">
+
+        </div>
+
+
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
