@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Confirmation page example
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">Renewal complete</h1>
+        <div class="govuk-panel__body">
+          Your reference number<br><strong>HDJ2123F</strong>
+        </div>
+      </div>
+
+      <p>
+        We have sent you a confirmation email.
+      </p>
+
+      <h2 class="govuk-heading-m">What happens next</h2>
+      <p>Your drone registration has now been renewed. This registration will last for 2 years, until <b> 19th September 2021</b>, after which it will need to be renewed again.</p>
+      <p>If you fly your drone after its registration has expired, you may be fined up to £5,000</p>
+      <p><a href="/account">View and renew registered drones</a></p>
+      <p><a href="/newdrone1">Register a new drone</a></p>
+
+
+    </div>
+  </div>
+
+{% endblock %}
